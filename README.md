@@ -1,7 +1,9 @@
 # libpythonpro
 Módulo para exemplificar construção de projetos Python no curso PyTools
 
-Link para o curso [Python Pro](https://www.python.pro.br/) [![Build Status](https://travis-ci.com/huidemar/libpythonpro.svg?branch=master)](https://travis-ci.com/huidemar/libpythonpro)
+Link para o curso [Python Pro](https://www.python.pro.br/)
+
+[![Build Status](https://travis-ci.com/huidemar/libpythonpro.svg?branch=master)](https://travis-ci.com/huidemar/libpythonpro)
 
 Para instalar:
 ```
