@@ -1,3 +1,7 @@
+from libpythonpro.spam.db.conexao import Conexao
+from libpythonpro.spam.modelos.usuario import Usuario
+
+
 def test_salvar_usuario():
     conexao = Conexao()
     sessao = conexao.gerar_sessao()
@@ -11,10 +15,10 @@ def test_salvar_usuario():
 def test_listar_usuarios():
     conexao = Conexao()
     sessao = conexao.gerar_sessao()
-    usuarios = [Usuario(nome='Foo'),Usuario(nome='Ticio')]
+    usuarios = [Usuario(nome='Foo'), Usuario(nome='Ticio')]
     for usuario in usuarios:
         sessao.salvar(usuario)
-    assert usuario == sessao.listar()
+    assert usuarios == sessao.listar()
     sessao.roll_back()
     sessao.fechar()
     conexao.fechar()
