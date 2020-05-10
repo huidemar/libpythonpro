@@ -11,4 +11,11 @@ pylint==2.5.0
 six==1.14.0
 toml==0.10.0
 wrapt==1.12.1
+# Deps do pytest
+more-itertools==4.0.0
+py==1.5.0
+attrs==17.4.0
+pyparsing==2.0.2
+pluggy==0.6.0
+pytest-5.4.2
 -r requirements.txt
