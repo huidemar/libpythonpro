@@ -11,7 +11,7 @@ class EnviadorMock(Enviador):
         self.parametros_de_envio = None
 
     def enviar(self, remetente, destinatario, assunto, corpo):
-        self.parametros_de_envio(remetente, destinatario, assunto, corpo)
+        self.parametros_de_envio = (remetente, destinatario, assunto, corpo)
         self.qtde_email_enviados += 1
 
 
@@ -50,7 +50,8 @@ def test_parametros_de_spam(sessao):
                                    )
     assert enviador.parametros_de_envio == (
         'mevio@bar.com.br',
-        'foo@bar.combr'
+        'foo@bar.com.br',
         'Curso Python Pro',
         'Confira os módulos fantásticos'
     )
+
